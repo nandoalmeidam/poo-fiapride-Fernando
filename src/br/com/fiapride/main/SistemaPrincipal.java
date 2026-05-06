@@ -2,23 +2,30 @@ package br.com.fiapride.main;
 
 import br.com.fiapride.model.Smartwatch;
 import br.com.fiapride.model.Bateria;
+import br.com.fiapride.model.MiBand;
+import br.com.fiapride.model.Pulseira;
 
 public class SistemaPrincipal {
 
 	public static void main(String[] args) {
-
-		// Criando bateria
-		Bateria bateria = new Bateria(100);
-
-		// Passando objeto bateria
-		Smartwatch meuSmartwatch = new Smartwatch("preta", "Huawei", bateria);
-
 		System.out.println("--- Sistema Smartwatch ---");
-		System.out.println(
-				"Meu smartwatch é da marca: " + meuSmartwatch.getMarca() + " | Cor: " + meuSmartwatch.getCor());
+		// Instanciando os objetos especificos
+		MiBand novo = new MiBand("preto", "qualquerum", true);
+		MiBand novos = new MiBand("vermelho", "seila", true);
 
-		meuSmartwatch.mostrarCarga();
-		meuSmartwatch.receberMensagem("Olá Professor!");
-		// meuSmartwatch.cargaBateria = 500;
+		Pulseira pulseira = new Pulseira("borracha");
+
+		System.out.println("MiBand cor: " + novo.getCor() + " | Modelo: " + novo.getMarca());
+
+		System.out.println("\nMiBand cor: " + novos.getCor() + " | Modelo: " + novos.getMarca());
+
+		if (novo.isRedondo()) {
+			System.out.println("\nModelo arredondado");
+		}
+
+		novo.setPulseira(pulseira);
+
+		System.out.println("\nCom pulseira de material: " + novo.getPulseira().getMaterial());
+
 	}
 }
