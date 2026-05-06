@@ -1,25 +1,21 @@
 package br.com.fiapride.model;
 
 public class Smartwatch {
-	public String cor;
-	public String marca;
-	public int cargaBateria;
-	public boolean ligado;
-	public boolean bluetooth;
+	private String cor;
+	private String marca;
+	private int cargaBateria;
+	private boolean ligado;
+	private boolean bluetooth;
 
 	public Smartwatch(String cor, String marca, int cargaBateria, boolean ligado, boolean bluetooth) {
-		this.cor = cor;
-		this.marca = marca;
-		this.cargaBateria = cargaBateria;
-		this.ligado = ligado;
-		this.bluetooth = bluetooth;
+		this.setCor(cor);
+		this.setMarca(marca);
+		this.setCargaBateria(cargaBateria);
+		this.setLigado(ligado);
+		this.setBluetooth(bluetooth);
 	}
 
 	public void mostrarCarga() {
-		if (cargaBateria < 0 || cargaBateria > 100) {
-			System.out.println("Bateria inválida");
-			return;
-		}
 
 		if (ligado == false) {
 			System.out.println("O Smartwatch está desligado.");
@@ -46,11 +42,50 @@ public class Smartwatch {
 			return;
 		}
 
-		if (cargaBateria <= 5) {
-			System.out.println("Erro: bateria baixa " + cargaBateria + "%. Carregue antes.");
+		System.out.println("Mensagem recebida: " + mensagem);
+	}
+
+	public String getCor() {
+		return this.cor;
+	}
+
+	private void setCor(String cor) {
+		this.cor = cor;
+	}
+
+	public String getMarca() {
+		return this.marca;
+	}
+
+	private void setMarca(String marca) {
+		this.marca = marca;
+	}
+
+	public int getCargaBateria() {
+		return this.cargaBateria;
+	}
+
+	private void setCargaBateria(int cargaBateria) {
+		if (cargaBateria < 0 || cargaBateria > 100) {
+			System.out.println("Bateria inválida");
 			return;
 		}
+		this.cargaBateria = cargaBateria;
+	}
 
-		System.out.println("Mensagem recebida: " + mensagem);
+	public boolean getLigado() {
+		return this.ligado;
+	}
+
+	private void setLigado(boolean ligado) {
+		this.ligado = ligado;
+	}
+
+	public boolean getBluetooth() {
+		return this.bluetooth;
+	}
+
+	private void setBluetooth(boolean bluetooth) {
+		this.bluetooth = bluetooth;
 	}
 }
