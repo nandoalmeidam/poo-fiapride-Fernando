@@ -1,14 +1,16 @@
+package br.com.fiapride.model;
+
 public class Smartwatch {
 	private String cor;
 	private String marca;
-	private int cargaBateria;
+	private Bateria bateria;
 	private boolean ligado;
 	private boolean bluetooth;
 
-	public Smartwatch(String cor, String marca, int cargaBateria, boolean ligado, boolean bluetooth) {
+	public Smartwatch(String cor, String marca, Bateria bateria) {
 		this.setCor(cor);
 		this.setMarca(marca);
-		this.setCargaBateria(cargaBateria);
+		this.bateria = bateria;
 		this.ligado = false;
 		this.bluetooth = false;
 	}
@@ -20,12 +22,12 @@ public class Smartwatch {
 			return;
 		}
 
-		if (cargaBateria < 15) {
-			System.out.println("Bateria baixa " + cargaBateria + "%");
+		if (bateria.getCarga() < 15) {
+			System.out.println("Bateria baixa " + bateria.getCarga() + "%");
 			return;
 		}
 
-		System.out.println("Carga atual: " + cargaBateria + "%");
+		System.out.println("Carga atual: " + bateria.getCarga() + "%");
 	}
 
 	public void receberMensagem(String mensagem) {
@@ -59,16 +61,8 @@ public class Smartwatch {
 		this.marca = marca;
 	}
 
-	public int getCargaBateria() {
-		return this.cargaBateria;
-	}
-
-	private void setCargaBateria(int cargaBateria) {
-		if (cargaBateria < 0 || cargaBateria > 100) {
-			System.out.println("Bateria inválida");
-			return;
-		}
-		this.cargaBateria = cargaBateria;
+	public Bateria getBateria() {
+		return this.bateria;
 	}
 
 	public boolean getLigado() {

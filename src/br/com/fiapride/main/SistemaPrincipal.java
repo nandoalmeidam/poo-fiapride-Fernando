@@ -1,11 +1,17 @@
 package br.com.fiapride.main;
 
 import br.com.fiapride.model.Smartwatch;
+import br.com.fiapride.model.Bateria;
 
 public class SistemaPrincipal {
 
 	public static void main(String[] args) {
-		Smartwatch meuSmartwatch = new Smartwatch("Preta", "Huawei", 100, true, false);
+
+		// Criando bateria
+		Bateria bateria = new Bateria(100);
+
+		// Passando objeto bateria
+		Smartwatch meuSmartwatch = new Smartwatch("preta", "Huawei", bateria);
 
 		System.out.println("--- Sistema Smartwatch ---");
 		System.out.println(
