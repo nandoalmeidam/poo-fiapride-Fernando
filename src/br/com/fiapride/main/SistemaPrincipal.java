@@ -28,5 +28,15 @@ public class SistemaPrincipal {
 			System.out.println(smartwatch.exibirTipoUso());
 			System.out.println("--------------------------------");
 		}
+
+		System.out.println();
+		System.out.println("=== TESTE DE INTERFACE RECARREGÁVEL ===");
+
+		Recarregavel[] dispositivos = new Recarregavel[] { (MiBand) miBand, (AppleWatch) appleWatch };
+
+		for (Recarregavel dispositivo : dispositivos) {
+			dispositivo.recarregar(85);
+			System.out.println("--------------------------------");
+		}
 	}
 }

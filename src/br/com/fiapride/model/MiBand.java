@@ -1,6 +1,6 @@
 package br.com.fiapride.model;
 
-public class MiBand extends Smartwatch {
+public class MiBand extends Smartwatch implements Recarregavel {
 
 	private boolean isRedondo;
 
@@ -16,5 +16,15 @@ public class MiBand extends Smartwatch {
 	@Override
 	public String exibirTipoUso() {
 		return "MiBand: ideal para monitoramento de saúde e bateria duradoura.";
+	}
+
+	@Override
+	public void recarregar(int percentual) {
+		if (percentual < Recarregavel.CARGA_MINIMA || percentual > Recarregavel.CARGA_MAXIMA) {
+			System.out.println("Erro: percentual inválido para recarga da MiBand.");
+		}
+
+		System.out.println("MiBand recarregada para " + percentual + "%.");
+		;
 	}
 }
