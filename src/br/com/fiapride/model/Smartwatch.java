@@ -1,5 +1,3 @@
-package br.com.fiapride.model;
-
 public class Smartwatch {
 	private String cor;
 	private String marca;
@@ -11,8 +9,8 @@ public class Smartwatch {
 		this.setCor(cor);
 		this.setMarca(marca);
 		this.setCargaBateria(cargaBateria);
-		this.setLigado(ligado);
-		this.setBluetooth(bluetooth);
+		this.ligado = false;
+		this.bluetooth = false;
 	}
 
 	public void mostrarCarga() {
