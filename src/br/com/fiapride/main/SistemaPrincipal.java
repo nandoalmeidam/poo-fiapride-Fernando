@@ -1,31 +1,32 @@
 package br.com.fiapride.main;
 
-import br.com.fiapride.model.Smartwatch;
-import br.com.fiapride.model.Bateria;
-import br.com.fiapride.model.MiBand;
-import br.com.fiapride.model.Pulseira;
+import java.util.ArrayList;
+import java.util.List;
+
+import br.com.fiapride.model.*;
 
 public class SistemaPrincipal {
 
 	public static void main(String[] args) {
-		System.out.println("--- Sistema Smartwatch ---");
-		// Instanciando os objetos especificos
-		MiBand novo = new MiBand("preto", "qualquerum", true);
-		MiBand novos = new MiBand("vermelho", "seila", true);
 
-		Pulseira pulseira = new Pulseira("borracha");
+		Bateria bateria1 = new Bateria(100);
+		Bateria bateria2 = new Bateria(80);
 
-		System.out.println("MiBand cor: " + novo.getCor() + " | Modelo: " + novo.getMarca());
+		Smartwatch miBand = new MiBand("Preta", "Xiaomi", bateria1, true);
+		Smartwatch appleWatch = new AppleWatch("Branco", "Apple", bateria2, true);
 
-		System.out.println("\nMiBand cor: " + novos.getCor() + " | Modelo: " + novos.getMarca());
+		List<Smartwatch> listaSmartwatch = new ArrayList<>();
 
-		if (novo.isRedondo()) {
-			System.out.println("\nModelo arredondado");
+		listaSmartwatch.add(miBand);
+		listaSmartwatch.add(appleWatch);
+
+		System.out.println("--- RELATÓRIO DE SMARTWATCHES ---");
+
+		for (Smartwatch smartwatch : listaSmartwatch) {
+			System.out.println("Marca " + smartwatch.getMarca());
+			System.out.println("Cor: " + smartwatch.getCor());
+			System.out.println(smartwatch.exibirTipoUso());
+			System.out.println("--------------------------------");
 		}
-
-		novo.setPulseira(pulseira);
-
-		System.out.println("\nCom pulseira de material: " + novo.getPulseira().getMaterial());
-
 	}
 }
