@@ -17,5 +17,4 @@ public class MiBand extends Smartwatch {
 	public String exibirTipoUso() {
 		return "MiBand: ideal para monitoramento de saúde e bateria duradoura.";
 	}
-
 }

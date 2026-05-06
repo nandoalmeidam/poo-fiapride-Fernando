@@ -1,6 +1,6 @@
 package br.com.fiapride.model;
 
-public class Smartwatch {
+public abstract class Smartwatch {
 	private String cor;
 	private String marca;
 	private Bateria bateria;
@@ -80,7 +80,5 @@ public class Smartwatch {
 		this.bluetooth = bluetooth;
 	}
 
-	public String exibirTipoUso() {
-		return "Uso genérico de smartwatch.";
-	}
+	public abstract String exibirTipoUso();
 }
