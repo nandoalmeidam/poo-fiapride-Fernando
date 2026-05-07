@@ -119,7 +119,7 @@ Por que, então, no código, precisamos EXPLICITAMENTE dizer ao Java que `Veicul
 Pense: Se esquecermos de colocar `abstract`, qual o risco que corremos? Alguém pode criar `new Veiculo\(\)` e quebrar a lógica do nosso sistema?"
 
 **Sua Resposta:**
-[Escreva sua reflexão aqui]
+No mundo real não faz sentido criar apenas um “Veículo” genérico, porque sempre estaremos falando de um tipo específico, como carro ou moto. Por isso a classe `Veiculo` funciona como um molde abstrato, servindo apenas de base para as classes concretas. O Java não consegue deduzir sozinho essa intenção do programador, então precisamos marcar explicitamente a classe como `abstract`. Se esquecermos disso, alguém poderia fazer `new Veiculo()` e criar um objeto genérico sem sentido dentro do sistema. Além disso, os métodos abstratos ajudam a obrigar que todas as classes filhas implementem seus próprios comportamentos. É como o exemplo da forma de biscoito visto na aula: não usamos a forma diretamente, mas sim os biscoitos criados a partir dela. Assim, o código fica mais organizado, seguro e próximo de situações reais.
 
 ---
 
