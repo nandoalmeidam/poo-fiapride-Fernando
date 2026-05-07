@@ -1,4 +1,4 @@
-# Projeto FiapRide - [Seu Nome Completo]
+# Projeto FiapRide - Fernando de Almeida Godoi Martines
 
 ## Informações do Aluno
 
