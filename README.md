@@ -154,10 +154,10 @@ O maior desafio foi entender como aplicar corretamente classes abstratas dentro 
 ## Conclusão
 
 **O que você aprendeu nestas 9 aulas?**
-[Reflexão final - conte sobre sua jornada de aprendizado]
+Durante essas 9 aulas eu consegui entender melhor como a Programação Orientada a Objetos está presente em praticamente tudo no desenvolvimento de sistemas. Antes eu enxergava as classes apenas como códigos separados, mas ao longo das aulas comecei a perceber como os objetos podem representar situações reais do dia a dia e interagir entre si. Também aprendi a importância de organizar melhor o sistema utilizando conceitos como encapsulamento, herança, polimorfismo, classes abstratas e interfaces. Além da parte técnica, consegui desenvolver uma visão mais lógica sobre como estruturar projetos de forma mais segura, reutilizável e próxima de sistemas reais utilizados pelas empresas.
 
 **Qual conceito foi mais difícil de entender?**
-160 [Qual conceito e como você superou a dificuldade?]
-161
-162 **O que você melhoraria no seu projeto se pudesse refazer?**
-163 [Reflexão crítica sobre seu próprio código]
+[Qual conceito e como você superou a dificuldade?]
+
+**O que você melhoraria no seu projeto se pudesse refazer?**
+[Reflexão crítica sobre seu próprio código]
