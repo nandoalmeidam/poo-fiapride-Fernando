@@ -86,7 +86,7 @@ Criar getters e setters para tudo automaticamente pode ser perigoso, porque nem 
 _Pense nas regras de negócio: O que acontece na hora que a Viagem acaba e o sistema precisa descontar o saldo? Se a Viagem tiver apenas a String "Ana Silva", ela consegue mexer no dinheiro dela?_"
 
 **Sua Resposta:**
-[Escreva sua reflexão aqui]
+Usar o objeto inteiro `Passageiro` é mais correto do que usar apenas uma `String` com o nome, porque a viagem precisa acessar outras informações além do nome do usuário. Durante a corrida, o sistema pode precisar consultar saldo, atualizar dados ou aplicar regras de negócio no próprio passageiro. Se a classe `Viagem` tivesse apenas a String `"Ana Silva"`, ela conseguiria apenas mostrar o nome na tela, mas não teria acesso ao saldo para descontar o valor da corrida. Na aula aprendemos que objetos podem se relacionar e “conversar” entre si, deixando o sistema mais organizado e reutilizável. Isso também evita repetir lógica em várias partes do projeto. Assim como um computador possui diferentes componentes trabalhando juntos, as classes também interagem para representar melhor situações reais dentro do sistema.
 
 ---
 
