@@ -59,7 +59,7 @@ Mesmo sendo mais rápido alterar o saldo diretamente no código, criar um métod
 Pense bem: Qual a diferença entre dar a alguém uma CÓPIA de um documento seu, e entregar o documento ORIGINAL para a pessoa rasurar? "
 
 **Sua Resposta:**
-[Escreva sua reflexão aqui]
+Deixar os atributos como `private` é importante porque protege os dados internos da classe. Se o atributo fosse `public`, qualquer parte do sistema poderia alterar diretamente informações sensíveis, sem passar por nenhuma regra ou validação. Já o método `get` público é mais seguro porque ele apenas retorna o valor, ou seja, permite consultar a informação sem modificar o dado original. É como entregar uma cópia de um documento: a pessoa consegue ler, mas não consegue rasurar o original. O encapsulamento ajuda justamente nisso, escondendo os detalhes internos e controlando o acesso por meio de métodos. Assim, a própria classe continua responsável por decidir como seus dados podem ser lidos ou alterados.
 
 ---
 
