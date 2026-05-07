@@ -195,7 +195,7 @@ O Java permite apenas uma herança de classe para evitar conflitos e ambiguidade
 ### Desafio Pessoal (Seu Projeto)
 
 **Qual foi o domínio que você escolheu para seu projeto pessoal?**
-Sistema baseado em SmatWatches.
+Sistema baseado em Smartwatches.
 
 **Quais classes você criou?**
 Classes: `Smartwatch`, `MiBand`, `AppleWatch`, `Bateria`, `Pulseira` e `SistemaPrincipal`.
