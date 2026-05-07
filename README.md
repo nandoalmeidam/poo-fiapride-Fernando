@@ -48,7 +48,7 @@ Criar uma classe `Passageiro` ajuda a organizar melhor o sistema e evita deixar 
 **Pergunta:** "Se nós podemos simplesmente fazer `passageiro.saldo = passageiro.saldo \+ 100` diretamente no código principal, por que dá tanto trabalho criar um método específico chamado `adicionarSaldo\(valor\)` para fazer isso? Quais seriam os riscos para a nossa startup de mobilidade se deixássemos qualquer programador alterar o saldo diretamente?"
 
 **Sua Resposta:**
-[Escreva sua reflexão aqui]
+Mesmo sendo mais rápido alterar o saldo diretamente no código, criar um método como `adicionarSaldo(valor)` deixa o sistema mais seguro e organizado. Na aula aprendemos que métodos representam os “verbos” da classe, ou seja, as ações que o objeto pode executar. Além disso, o método permite criar regras de negócio, como impedir valores negativos ou registrar movimentações do usuário. Se qualquer programador pudesse alterar o saldo diretamente, poderiam acontecer erros ou até fraudes dentro do sistema. Usar métodos também facilita manutenção e deixa o código mais próximo de como sistemas reais são desenvolvidos.
 
 ---
 
