@@ -44,7 +44,7 @@ Criar uma classe `Passageiro` ajuda a organizar melhor o sistema e evita deixar 
 ### Diagrama UML da Aula 1
 
 <p align="center">
-  <img src="docs/images/aula1.png" width="350">
+  <img src="docs/images/aula1.png" width="200">
 </p>
 
 ---
@@ -59,7 +59,7 @@ Mesmo sendo mais rápido alterar o saldo diretamente no código, criar um métod
 ### Diagrama UML da Aula 2
 
 <p align="center">
-  <img src="docs/images/aula2.png" width="450">
+  <img src="docs/images/aula2.png" width="350">
 </p>
 
 ---
@@ -76,7 +76,7 @@ Deixar os atributos como `private` é importante porque protege os dados interno
 ### Diagrama UML da Aula 3
 
 <p align="center">
-  <img src="docs/images/aula3.png" width="450">
+  <img src="docs/images/aula3.png" width="400">
 </p>
 
 ---
@@ -98,7 +98,7 @@ Criar getters e setters para tudo automaticamente pode ser perigoso, porque nem 
 ### Diagrama UML da Aula 4
 
 <p align="center">
-  <img src="docs/images/aula4.png" width="450">
+  <img src="docs/images/aula4.png" width="400">
 </p>
 
 ---
