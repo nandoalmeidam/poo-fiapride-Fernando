@@ -75,7 +75,7 @@ Deixar os atributos como `private` é importante porque protege os dados interno
 _Dica: Pense sobre o que pode ou não mudar fisicamente em um carro, e a diferença entre "alterar um dado no banco" e "executar um processo real no Detran"_"
 
 **Sua Resposta:**
-[Escreva sua reflexão aqui]
+Criar getters e setters para tudo automaticamente pode ser perigoso, porque nem toda informação deve ser alterada livremente dentro do sistema. Na aula aprendemos que o construtor representa o “nascimento” do objeto, então alguns dados precisam ser definidos corretamente logo na criação e não deveriam mudar depois. O modelo de um veículo, por exemplo, não faz sentido ser alterado toda hora, por isso não criamos `setModelo()`. Já a placa exige mais cuidado ainda, porque trocar uma placa não é apenas mudar um texto no sistema, mas sim um processo real que envolve regras e validações, como acontece no Detran. Por isso foi criado um método específico chamado `atualizarPlaca()`, deixando o sistema mais seguro e organizado. Essas decisões ajudam a evitar fraudes, alterações indevidas e problemas de lógica no projeto.
 
 ---
 
