@@ -106,7 +106,7 @@ O Java não permite que a classe filha altere diretamente os atributos privados 
 **Pergunta:** "No nosso loop `for \(Veiculo veiculo : frota\)`, a variável `veiculo` é do tipo genérico `Veiculo`. Se esquecêssemos de criar o método `calcularAutonomia\(\)` lá na classe mãe `Veiculo`, nós conseguiríamos chamá-lo dentro do loop, mesmo sabendo que ele existe dentro do `Carro` e da `Moto`? Por que o contrato precisa existir na base da hierarquia?"
 
 **Sua Resposta:**
-[Escreva sua reflexão aqui]
+Se o método `calcularAutonomia()` não existisse na classe mãe `Veiculo`, não conseguiríamos chamá-lo dentro do loop usando a variável genérica `Veiculo`. Isso acontece porque o Java olha primeiro para o contrato definido na superclasse para saber quais métodos todos os veículos devem possuir. Na aula aprendemos que o polimorfismo permite usar o mesmo método com comportamentos diferentes em cada classe filha. Assim, `Carro` e `Moto` podem ter regras de cálculo diferentes, mas mantendo o mesmo nome de método. O `@Override` serve justamente para sobrescrever o comportamento da mãe com uma lógica específica da filha. Dessa forma, o sistema fica mais organizado, reutilizável e preparado para aceitar diferentes tipos de veículos sem precisar alterar o loop principal.
 
 ---
 
