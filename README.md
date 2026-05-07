@@ -157,7 +157,7 @@ O maior desafio foi entender como aplicar corretamente classes abstratas dentro 
 Durante essas 9 aulas eu consegui entender melhor como a Programação Orientada a Objetos está presente em praticamente tudo no desenvolvimento de sistemas. Antes eu enxergava as classes apenas como códigos separados, mas ao longo das aulas comecei a perceber como os objetos podem representar situações reais do dia a dia e interagir entre si. Também aprendi a importância de organizar melhor o sistema utilizando conceitos como encapsulamento, herança, polimorfismo, classes abstratas e interfaces. Além da parte técnica, consegui desenvolver uma visão mais lógica sobre como estruturar projetos de forma mais segura, reutilizável e próxima de sistemas reais utilizados pelas empresas.
 
 **Qual conceito foi mais difícil de entender?**
-[Qual conceito e como você superou a dificuldade?]
+O conceito que tive mais dificuldade para entender foi o encapsulamento utilizando `get` e `set`. No começo eu não conseguia entender exatamente quando deveria usar os métodos e quais atributos precisavam ser protegidos. Também ficava confuso sobre o motivo de alguns atributos serem `private` e não poderem ser acessados diretamente. Com o tempo, treinando os exercícios feitos em aula, comecei a entender melhor como o encapsulamento ajuda a proteger os dados e organizar o sistema. Depois de praticar bastante, consegui perceber que os métodos servem para controlar a forma correta de acessar e alterar as informações dos objetos.
 
 **O que você melhoraria no seu projeto se pudesse refazer?**
 [Reflexão crítica sobre seu próprio código]
