@@ -44,7 +44,7 @@ Criar uma classe `Passageiro` ajuda a organizar melhor o sistema e evita deixar 
 ### Diagrama UML da Aula 1
 
 <p align="center">
-  <img src="docs/images/aula1.png" width="700">
+  <img src="docs/images/aula1.png" width="350">
 </p>
 
 ---
@@ -59,7 +59,7 @@ Mesmo sendo mais rápido alterar o saldo diretamente no código, criar um métod
 ### Diagrama UML da Aula 2
 
 <p align="center">
-  <img src="docs/images/aula2.png" width="700">
+  <img src="docs/images/aula2.png" width="450">
 </p>
 
 ---
@@ -76,7 +76,7 @@ Deixar os atributos como `private` é importante porque protege os dados interno
 ### Diagrama UML da Aula 3
 
 <p align="center">
-  <img src="docs/images/aula3.png" width="700">
+  <img src="docs/images/aula3.png" width="450">
 </p>
 
 ---
@@ -98,7 +98,7 @@ Criar getters e setters para tudo automaticamente pode ser perigoso, porque nem 
 ### Diagrama UML da Aula 4
 
 <p align="center">
-  <img src="docs/images/aula4.png" width="700">
+  <img src="docs/images/aula4.png" width="450">
 </p>
 
 ---
@@ -115,7 +115,7 @@ Usar o objeto inteiro `Passageiro` é mais correto do que usar apenas uma `Strin
 ### Diagrama UML da Aula 5
 
 <p align="center">
-  <img src="docs/images/aula5.png" width="850">
+  <img src="docs/images/aula5.png" width="550">
 </p>
 
 ---
@@ -132,7 +132,7 @@ O Java não permite que a classe filha altere diretamente os atributos privados 
 ### Diagrama UML da Aula 6
 
 <p align="center">
-  <img src="docs/images/aula6.png" width="850">
+  <img src="docs/images/aula6.png" width="550">
 </p>
 
 ---
