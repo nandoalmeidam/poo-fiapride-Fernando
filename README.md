@@ -41,6 +41,12 @@ Este projeto é o resultado do aprendizado nas aulas 1-9 de Programação Orient
 **Sua Resposta:**
 Criar uma classe `Passageiro` ajuda a organizar melhor o sistema e evita deixar várias variáveis soltas no `main`. Em um projeto pequeno isso até funcionaria, mas em um sistema como o FiapRide, com milhares ou milhões de usuários, seria muito difícil controlar tudo manualmente. A classe funciona como um molde, permitindo criar vários passageiros com seus próprios dados de forma organizada. Além disso, ela ajuda na segurança das informações, porque nem todo dado deve ficar público para qualquer parte do sistema alterar. O professor comentou que, por exemplo, um motorista não deveria conseguir alterar diretamente o nome ou saldo de um passageiro. Com Programação Orientada a Objetos, conseguimos proteger os dados e controlar melhor o acesso através de métodos específicos.
 
+### Diagrama UML da Aula 1
+
+<p align="center">
+  <img src="docs/images/aula1.png" width="700">
+</p>
+
 ---
 
 ### Aula 2 - Métodos
@@ -49,6 +55,12 @@ Criar uma classe `Passageiro` ajuda a organizar melhor o sistema e evita deixar 
 
 **Sua Resposta:**
 Mesmo sendo mais rápido alterar o saldo diretamente no código, criar um método como `adicionarSaldo(valor)` deixa o sistema mais seguro e organizado. Na aula aprendemos que métodos representam os “verbos” da classe, ou seja, as ações que o objeto pode executar. Além disso, o método permite criar regras de negócio, como impedir valores negativos ou registrar movimentações do usuário. Se qualquer programador pudesse alterar o saldo diretamente, poderiam acontecer erros ou até fraudes dentro do sistema. Usar métodos também facilita manutenção e deixa o código mais próximo de como sistemas reais são desenvolvidos.
+
+### Diagrama UML da Aula 2
+
+<p align="center">
+  <img src="docs/images/aula2.png" width="700">
+</p>
 
 ---
 
@@ -60,6 +72,12 @@ Pense bem: Qual a diferença entre dar a alguém uma CÓPIA de um documento seu,
 
 **Sua Resposta:**
 Deixar os atributos como `private` é importante porque protege os dados internos da classe. Se o atributo fosse `public`, qualquer parte do sistema poderia alterar diretamente informações sensíveis, sem passar por nenhuma regra ou validação. Já o método `get` público é mais seguro porque ele apenas retorna o valor, ou seja, permite consultar a informação sem modificar o dado original. É como entregar uma cópia de um documento: a pessoa consegue ler, mas não consegue rasurar o original. O encapsulamento ajuda justamente nisso, escondendo os detalhes internos e controlando o acesso por meio de métodos. Assim, a própria classe continua responsável por decidir como seus dados podem ser lidos ou alterados.
+
+### Diagrama UML da Aula 3
+
+<p align="center">
+  <img src="docs/images/aula3.png" width="700">
+</p>
 
 ---
 
@@ -77,6 +95,12 @@ _Dica: Pense sobre o que pode ou não mudar fisicamente em um carro, e a diferen
 **Sua Resposta:**
 Criar getters e setters para tudo automaticamente pode ser perigoso, porque nem toda informação deve ser alterada livremente dentro do sistema. Na aula aprendemos que o construtor representa o “nascimento” do objeto, então alguns dados precisam ser definidos corretamente logo na criação e não deveriam mudar depois. O modelo de um veículo, por exemplo, não faz sentido ser alterado toda hora, por isso não criamos `setModelo()`. Já a placa exige mais cuidado ainda, porque trocar uma placa não é apenas mudar um texto no sistema, mas sim um processo real que envolve regras e validações, como acontece no Detran. Por isso foi criado um método específico chamado `atualizarPlaca()`, deixando o sistema mais seguro e organizado. Essas decisões ajudam a evitar fraudes, alterações indevidas e problemas de lógica no projeto.
 
+### Diagrama UML da Aula 4
+
+<p align="center">
+  <img src="docs/images/aula4.png" width="700">
+</p>
+
 ---
 
 ### Aula 5 - Associação
@@ -87,6 +111,12 @@ _Pense nas regras de negócio: O que acontece na hora que a Viagem acaba e o sis
 
 **Sua Resposta:**
 Usar o objeto inteiro `Passageiro` é mais correto do que usar apenas uma `String` com o nome, porque a viagem precisa acessar outras informações além do nome do usuário. Durante a corrida, o sistema pode precisar consultar saldo, atualizar dados ou aplicar regras de negócio no próprio passageiro. Se a classe `Viagem` tivesse apenas a String `"Ana Silva"`, ela conseguiria apenas mostrar o nome na tela, mas não teria acesso ao saldo para descontar o valor da corrida. Na aula aprendemos que objetos podem se relacionar e “conversar” entre si, deixando o sistema mais organizado e reutilizável. Isso também evita repetir lógica em várias partes do projeto. Assim como um computador possui diferentes componentes trabalhando juntos, as classes também interagem para representar melhor situações reais dentro do sistema.
+
+### Diagrama UML da Aula 5
+
+<p align="center">
+  <img src="docs/images/aula5.png" width="850">
+</p>
 
 ---
 
@@ -99,6 +129,12 @@ Por que o Java não deixa a filha alterar as variáveis privadas da mãe diretam
 **Sua Resposta:**
 O Java não permite que a classe filha altere diretamente os atributos privados da classe mãe porque isso faz parte do encapsulamento, conceito aprendido nas aulas anteriores. Mesmo herdando características de `Veiculo`, a classe `Carro` ainda precisa respeitar as regras de proteção criadas pela superclasse. Assim, dados importantes como placa e modelo não podem ser modificados livremente por qualquer classe do sistema. O uso de `super()` e dos métodos específicos ajuda a manter a segurança e a organização do código. Além disso, a herança evita repetição, porque a classe filha não precisa recriar atributos que já existem na mãe. Cada subclasse pode adicionar suas próprias características, como porta-malas no carro ou baú na moto, reaproveitando a estrutura principal da superclasse.
 
+### Diagrama UML da Aula 6
+
+<p align="center">
+  <img src="docs/images/aula6.png" width="850">
+</p>
+
 ---
 
 ### Aula 7 - Polimorfismo
@@ -107,6 +143,12 @@ O Java não permite que a classe filha altere diretamente os atributos privados 
 
 **Sua Resposta:**
 Se o método `calcularAutonomia()` não existisse na classe mãe `Veiculo`, não conseguiríamos chamá-lo dentro do loop usando a variável genérica `Veiculo`. Isso acontece porque o Java olha primeiro para o contrato definido na superclasse para saber quais métodos todos os veículos devem possuir. Na aula aprendemos que o polimorfismo permite usar o mesmo método com comportamentos diferentes em cada classe filha. Assim, `Carro` e `Moto` podem ter regras de cálculo diferentes, mas mantendo o mesmo nome de método. O `@Override` serve justamente para sobrescrever o comportamento da mãe com uma lógica específica da filha. Dessa forma, o sistema fica mais organizado, reutilizável e preparado para aceitar diferentes tipos de veículos sem precisar alterar o loop principal.
+
+### Diagrama UML da Aula 7
+
+<p align="center">
+  <img src="docs/images/aula7.png" width="850">
+</p>
 
 ---
 
@@ -121,6 +163,12 @@ Pense: Se esquecermos de colocar `abstract`, qual o risco que corremos? Alguém 
 **Sua Resposta:**
 No mundo real não faz sentido criar apenas um “Veículo” genérico, porque sempre estaremos falando de um tipo específico, como carro ou moto. Por isso a classe `Veiculo` funciona como um molde abstrato, servindo apenas de base para as classes concretas. O Java não consegue deduzir sozinho essa intenção do programador, então precisamos marcar explicitamente a classe como `abstract`. Se esquecermos disso, alguém poderia fazer `new Veiculo()` e criar um objeto genérico sem sentido dentro do sistema. Além disso, os métodos abstratos ajudam a obrigar que todas as classes filhas implementem seus próprios comportamentos. É como o exemplo da forma de biscoito visto na aula: não usamos a forma diretamente, mas sim os biscoitos criados a partir dela. Assim, o código fica mais organizado, seguro e próximo de situações reais.
 
+### Diagrama UML da Aula 8
+
+<p align="center">
+  <img src="docs/images/aula8.png" width="850">
+</p>
+
 ---
 
 ### Aula 9 - Interfaces
@@ -133,6 +181,12 @@ Como as interfaces resolvem esse problema? "
 
 **Sua Resposta:**
 O Java permite apenas uma herança de classe para evitar conflitos e ambiguidades dentro do sistema. Se `CarroEletrico` herdasse de `Veiculo` e `Bateria` ao mesmo tempo, poderia acontecer um problema caso as duas classes tivessem um método com o mesmo nome, como `ligar()`, deixando o Java sem saber qual comportamento utilizar. As interfaces resolvem isso porque funcionam como contratos de comportamento, definindo apenas o que a classe deve fazer, sem implementar a lógica diretamente. Assim, diferentes classes podem compartilhar os mesmos comportamentos sem precisar pertencer à mesma hierarquia. Na interface, os métodos são públicos e abstratos, obrigando a classe que implementa a criar sua própria lógica usando `@Override`. Isso deixa o sistema mais organizado, flexível e seguro para reutilização de código.
+
+### Diagrama UML da Aula 9
+
+<p align="center">
+  <img src="docs/images/aula9.png" width="850">
+</p>
 
 ---
 
