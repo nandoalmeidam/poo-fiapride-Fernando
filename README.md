@@ -97,7 +97,7 @@ Usar o objeto inteiro `Passageiro` é mais correto do que usar apenas uma `Strin
 Por que o Java não deixa a filha alterar as variáveis privadas da mãe diretamente? Qual o princípio das aulas passadas que isso está protegendo?""
 
 **Sua Resposta:**
-[Escreva sua reflexão aqui]
+O Java não permite que a classe filha altere diretamente os atributos privados da classe mãe porque isso faz parte do encapsulamento, conceito aprendido nas aulas anteriores. Mesmo herdando características de `Veiculo`, a classe `Carro` ainda precisa respeitar as regras de proteção criadas pela superclasse. Assim, dados importantes como placa e modelo não podem ser modificados livremente por qualquer classe do sistema. O uso de `super()` e dos métodos específicos ajuda a manter a segurança e a organização do código. Além disso, a herança evita repetição, porque a classe filha não precisa recriar atributos que já existem na mãe. Cada subclasse pode adicionar suas próprias características, como porta-malas no carro ou baú na moto, reaproveitando a estrutura principal da superclasse.
 
 ---
 
