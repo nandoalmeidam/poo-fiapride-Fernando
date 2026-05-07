@@ -141,13 +141,13 @@ O Java permite apenas uma herança de classe para evitar conflitos e ambiguidade
 ### Desafio Pessoal (Seu Projeto)
 
 **Qual foi o domínio que você escolheu para seu projeto pessoal?**
-[Responda aqui: ex: Sistema de Biblioteca, Playlist de Música, PetShop, etc.]
+Sistema baseado em SmatWatches.
 
 **Quais classes você criou?**
-[Liste suas classes: ex: Livro, Usuario, Emprestimo]
+Classes: `Smartwatch`, `MiBand`, `AppleWatch`, `Bateria`, `Pulseira` e `SistemaPrincipal`.
 
 **Qual foi o maior desafio técnico que você enfrentou?**
-[Descreva o desafio e como você o resolveu - 10-15 linhas]
+O maior desafio foi entender como aplicar corretamente classes abstratas dentro do contexto do projeto. No começo eu tinha dificuldade para compreender por que não fazia sentido criar diretamente um objeto genérico como `new Smartwatch()`, e sim objetos mais específicos como `MiBand` ou `AppleWatch`. Também precisei entender melhor como os métodos abstratos funcionavam e por que as classes filhas eram obrigadas a implementar determinados comportamentos. Outro ponto desafiador foi organizar a herança sem repetir atributos e métodos desnecessários nas subclasses. Durante o desenvolvimento consegui perceber melhor a diferença entre uma classe concreta e uma abstrata, além de entender como o polimorfismo e o `@Override` ajudam a deixar o sistema mais organizado e reutilizável.
 
 ---
 
