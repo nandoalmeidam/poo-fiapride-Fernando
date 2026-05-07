@@ -132,7 +132,7 @@ Pense: Se `CarroEletrico` pudesse herdar de `Veiculo` E de `Bateria` ao mesmo te
 Como as interfaces resolvem esse problema? "
 
 **Sua Resposta:**
-[Escreva sua reflexão aqui]
+O Java permite apenas uma herança de classe para evitar conflitos e ambiguidades dentro do sistema. Se `CarroEletrico` herdasse de `Veiculo` e `Bateria` ao mesmo tempo, poderia acontecer um problema caso as duas classes tivessem um método com o mesmo nome, como `ligar()`, deixando o Java sem saber qual comportamento utilizar. As interfaces resolvem isso porque funcionam como contratos de comportamento, definindo apenas o que a classe deve fazer, sem implementar a lógica diretamente. Assim, diferentes classes podem compartilhar os mesmos comportamentos sem precisar pertencer à mesma hierarquia. Na interface, os métodos são públicos e abstratos, obrigando a classe que implementa a criar sua própria lógica usando `@Override`. Isso deixa o sistema mais organizado, flexível e seguro para reutilização de código.
 
 ---
 
