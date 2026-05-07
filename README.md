@@ -39,7 +39,7 @@ Este projeto é o resultado do aprendizado nas aulas 1-9 de Programação Orient
 **Pense:** E se o FiapRide tiver 1 milhão de usuários? Como a Classe ajuda a resolver isso?
 
 **Sua Resposta:**
-[Escreva sua reflexão aqui - 5-10 linhas]
+Criar uma classe `Passageiro` ajuda a organizar melhor o sistema e evita deixar várias variáveis soltas no `main`. Em um projeto pequeno isso até funcionaria, mas em um sistema como o FiapRide, com milhares ou milhões de usuários, seria muito difícil controlar tudo manualmente. A classe funciona como um molde, permitindo criar vários passageiros com seus próprios dados de forma organizada. Além disso, ela ajuda na segurança das informações, porque nem todo dado deve ficar público para qualquer parte do sistema alterar. O professor comentou que, por exemplo, um motorista não deveria conseguir alterar diretamente o nome ou saldo de um passageiro. Com Programação Orientada a Objetos, conseguimos proteger os dados e controlar melhor o acesso através de métodos específicos.
 
 ---
 
