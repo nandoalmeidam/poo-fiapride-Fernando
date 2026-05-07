@@ -2,11 +2,11 @@
 
 ## Informações do Aluno
 
-**Nome:** [Seu Nome Completo]
-**RM:** [Seu RM]
-**Turma:** [Sua Turma]
-**Curso:** [Seu Curso]
-**GitHub:** [@seu-usuario]
+**Nome:** Fernando de Almeida Godoi Martines
+**RM:** 564820
+**Turma:** 2CCPG
+**Curso:** Ciência da Computação
+**GitHub:** @nandoalmeidam
 
 ---
 
